@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Feeder-rescue:ATtiny402-SS-MCU_Microchip_ATtiny U1
+L MCU_Microchip_ATtiny:ATtiny402-SS U1
 U 1 1 5E2EEF2E
 P 3400 1650
 F 0 "U1" H 2871 1696 50  0000 R CNN
