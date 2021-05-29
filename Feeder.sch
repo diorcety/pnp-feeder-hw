@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PNP Feeder"
-Date "2020-03-30"
+Date "2021-05-29"
 Rev ""
 Comp ""
 Comment1 ""
@@ -202,13 +202,13 @@ F 3 "" H 1525 3150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4000 1350 4625 1350
-Text Label 4625 1350 0    50   ~ 0
-UPDI
+	4000 1350 4825 1350
+Text Label 4825 1550 2    50   ~ 0
+MOTOR
 Wire Wire Line
 	1575 2950 1525 2950
 Text Label 1525 3050 2    50   ~ 0
-UPDI
+FEEDBACK
 Wire Wire Line
 	6025 1850 6125 1850
 Wire Wire Line
@@ -230,11 +230,11 @@ F 3 "" H 5575 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 4750 4975 4750
-Text Label 4400 4950 0    50   ~ 0
+Text Label 4700 4950 0    50   ~ 0
 FEEDBACK
 Wire Wire Line
 	5100 1450 5100 1750
-Text Label 4825 1550 2    50   ~ 0
+Text Label 4825 1350 2    50   ~ 0
 FEEDBACK
 Wire Wire Line
 	1575 3050 1525 3050
@@ -435,7 +435,7 @@ P 5075 4525
 F 0 "Q1" H 5280 4571 50  0000 L CNN
 F 1 "2N7002NXAKR" H 4550 4675 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5275 4625 50  0001 C CNN
-F 3 "~" H 5075 4525 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/2N7002NXAK.pdf" H 5075 4525 50  0001 C CNN
 	1    5075 4525
 	-1   0    0    -1  
 $EndComp
@@ -470,7 +470,7 @@ Wire Wire Line
 Wire Wire Line
 	5325 4525 5325 4550
 Text Label 5600 4525 2    50   ~ 0
-UPDI
+MOTOR
 Wire Wire Line
 	5600 4525 5325 4525
 Connection ~ 5325 4525
@@ -517,4 +517,17 @@ Wire Wire Line
 	4500 4300 4975 4300
 Wire Wire Line
 	4500 4850 4500 4600
+$Comp
+L Device:R_Small R3
+U 1 1 60B20362
+P 4500 4950
+F 0 "R3" H 4559 4996 50  0000 L CNN
+F 1 "1k" H 4559 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4500 4950 50  0001 C CNN
+F 3 "~" H 4500 4950 50  0001 C CNN
+	1    4500 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 4950 4700 4950
 $EndSCHEMATC
